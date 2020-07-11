@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Stop Watch</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="main-wrap ">
+
+        <div class="container">
+            
+            <div class="row text-center">
+                   
+                <div class="col-lg-4 offset-lg-4 stop-content">
+                    <h1 class="text-center heading">Stop Watch</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="timer" id="timer">
+                                
+                            <h1 id="min">00</h1>
+                            <h1 id="sec">00</h1>
+                            <h1 id="msec">00</h1>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="row set-button">
+                        <div class="col-4">
+                            <button id="dis-stop-btn" class="float-right" disabled>Stop</button>
+                            <button id="dis-start-btn" class="float-right" disabled>Start</button>
+                        </div>
+                        <div class="col-4">
+                            <button id="act-start-btn" onclick="startTime()">Start</button>
+                            <button id="act-stop-btn" onclick="stopTime()">Stop</button>
+                        </div>
+                        <div class="col-4">
+                            <button id="reset-btn" class="float-left" onclick="resetTime()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

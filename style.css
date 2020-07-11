@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+.main-wrap{
+    background: linear-gradient(131deg, rgba(225,69,149,1) 0%, rgba(112,70,175,1) 60%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stop-content{
+    background-color: #152244;
+    padding: 20px 20px 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+.heading{
+    color: #ffffff;
+    padding: 30px;
+}
+.timer{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #e14595;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #e14595;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 800ms ease;
+    animation: spiner 1s ease infinite alternate;
+}
+@keyframes spiner{
+    0%{
+        border-top: 10px solid #334061; 
+    }
+    25%{
+        border-right: 10px solid#334061;
+    }
+    75%{
+        border-bottom:10px solid #334061; 
+    }
+    100%{
+        border-left: 10px solid #334061; 
+    }
+} 
+#min,#sec,#msec{
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    min-width: 80px;
+}
+#min:after,#sec:after{
+    content: ":";
+    color: white;
+    padding: 0px 5px;
+}
+.set-button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dis-stop-btn,#reset-btn{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    outline: white;
+}
+#dis-start-btn{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    outline: white;
+    display: none;
+}
+
+
+#act-start-btn{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e14595;
+    border-radius: 50%;
+    color: #e14595;
+    font-size: 30px;
+    outline: #e14595;
+}
+#act-stop-btn{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e14595;
+    border-radius: 50%;
+    color: #e14595;
+    font-size: 30px;
+    outline: #e14595;
+    display: none; 
+}
